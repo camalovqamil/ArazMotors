@@ -22,18 +22,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="padding:15px; display:flex; display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width:100%;
-    position:fixed;
-    top:0">
+        <div style="padding: 15px; display: flex; display: flex; align-items: center; justify-content: space-between; width: 100%; position: fixed; top: 0; z-index: 99999; background-color: white;">
 
             <img src="img/logo.png" height="60" />
             <asp:Label ID="lblUserName" runat="server" Text="Camalov Qamil - Beyləqan" ForeColor="Black"></asp:Label>
-            
 
-            <a href="#" class="btn btn-primary" style="text-decoration: none;">Səbət <span class="badge badge-light"><asp:Label ID="lblSebet" runat="server" Text="0"></asp:Label></span></a>
+            <a href="#" class="btn btn-danger" style="text-decoration: none;">Bildiriş  <span class="badge badge-light">
+                <asp:Label ID="lblBildirish" runat="server" Text="0"></asp:Label></span></a>
+
+            <a href="#" class="btn btn-primary" style="text-decoration: none;">Səbət  <span class="badge badge-light">
+                <asp:Label ID="lblSebet" runat="server" Text="0"></asp:Label></span></a>
 
         </div>
         <section class="ftco-section">
@@ -66,10 +64,7 @@
         <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/main.js"></script>
 
-
-
-
-        <div style="margin-top:185px;">
+        <div id="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
