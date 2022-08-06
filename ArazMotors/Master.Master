@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ArazMotors.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ArazMotors</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="padding:15px; display:flex; display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width:100%;
+    position:fixed;
+    top:0">
+
+            <img src="img/logo.png" height="60" />
+            <asp:Label ID="lblUserName" runat="server" Text="Camalov Qamil - Beyləqan" ForeColor="Black"></asp:Label>
+            
+
+            <a href="#" class="btn btn-primary" style="text-decoration: none;">Səbət <span class="badge badge-light"><asp:Label ID="lblSebet" runat="server" Text="0"></asp:Label></span></a>
+
+        </div>
+        <section class="ftco-section">
+            <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">               
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>Menu	     
+                    </button>
+                    <div class="collapse navbar-collapse" id="ftco-nav">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Axtarış</a></li>                           
+                            <li class="nav-item"><a href="#" class="nav-link">Sifariş</a></li>                            
+                            <li class="nav-item"><a href="#" class="nav-link">Səbət</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hesabat</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Qaytarma</a></li>                           
+                            <li class="nav-item"><a href="#" class="nav-link">Kataloq</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Aksiyalar</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Export</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Məlumat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- END nav -->
+
+        </section>
+
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/popper.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/main.js"></script>
+
+
+
+
+        <div style="margin-top:185px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
